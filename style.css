@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+body{
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+p{
+  text-align: left;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+h4{
+  text-align: center;
+  margin: 0%;
+}
+
+/*header*/
+header{
+    margin: 0rem;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+header img{
+    margin-left: 5rem;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  background-color: white;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Abel;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: Abel;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: purple;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(71, 6, 71);
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: purple;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*end header*/
+
+/* Showcase Text */
+.Showcase-Text{
+  background-color: orchid;
+}
+
+.Showcase-Text > h1{
+  color:rgb(251, 255, 4);
+  padding-bottom: 1.5rem;
+  font-family: Viaoda Libre;
+  text-shadow: 0px 3px 0px orangered, 0px 3px 0px orange;
+}
+
+.Showcase-Text > h4{
+  color: white;
+  padding-top: 1rem;
+  font-family: Satisfy;
+  font-weight: 500;
+}
+/* End Of Showcase Text*/
+
+/* Main Showcase */
+.Showcase{
+  width: 100%;
+  margin: 0%;
+  background-color: rgb(1, 10, 61);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  height: 360px;
+  background-color: black;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+.mySlides img{
+  width: 600px;
+  height: 300px;
+  margin: 0px auto 0px auto;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: yellow 0px 2px 2px 2px, orangered 0px 1px 1px 1px, red 0.5px 0.5px 0.5px;
+}
+
+/* Caption text */
+.text {
+  color: orchid;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-family: Dancing Script;
+  font-size: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* End Of Main Showcase */
+
+/* Container Text*/
+.Container{
+  background-color: rgba(255, 3, 255, 0.35);
+  margin: 0%;
+  border: 1px solid rgba(255, 3, 255, 0.35);
+}
+
+.Container > .Container-text{
+  width: 90%;
+  margin: auto;
+}
+
+.Container > .Container-text > h3{
+  color: rgb(1, 10, 61);
+  font-family: Abel;
+  font-size: 1.4rem;
+  text-align: center;
+  border-bottom: white 2px solid;
+  width: fit-content;
+  margin: auto;
+}
+
+.Container > span > .Container-text{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.Container > .Container-text > p{
+  color: purple;
+  font-family: Abel;
+}
+
+.Container > span > .Container-text > p{
+  color: purple;
+  font-family: Abel;
+  text-align: center;
+}
+
+.Container > .Container-text > p > a{
+  font-family: Abel;
+  color: black;
+  font-weight: 600;
+}
+
+.Container > span > .Container-text > p > a{
+  color: purple;
+  font-family: Abel;
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.Container > span > .Container-text > a{
+  color: white;
+  font-family: Abel;
+  font-size: 1.5rem;
+}
+/* End Container Text*/
+
+.Showcase-wrapper{
+  background-color:  white;
+  margin: 0%;
+}
+
+/* Title Box */
+.Title-box{
+  margin: 0%;
+  text-align: center;
+}
+
+.Title-box > h2{
+  margin: 0% auto;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: yellow;
+  text-shadow: 0px 3px 0px orangered, 0px 3px 0px orange;
+  background-color: orchid;
+  font-family: Nanum Myeongjo;
+  box-shadow: black 0px 0px 4px;
+}
+/* End Title Box */
+
+/* Grid-Container */
+.Grid-container{
+  grid-template-columns: repeat(3 , 1fr);
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Grid-container > div {
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: black 0px 0px 4px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.Grid-container > div > a >img{
+  border-radius: 0px 0px 4px 4px;
+}
+
+.Grid-container > div > p{
+  text-align: center;
+  font-size: 1.5rem;
+  color: orchid;
+  font-family: Dancing Script;
+}
+
+.Grid-container > div > button{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(1, 10, 61);
+  border-radius: 3px;
+  border: none;
+  font-family: Abel;
+  box-shadow: white 0px 0px 4px;
+}
+
+.Grid-container > div > button > a{
+  color: white;
+}
+/* End Grid-Container */
+
+/* Footer */
+footer{
+  margin-top: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+footer > .Grid{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  background-color: orchid;
+  border: rgba(255, 3, 255, 0.35) 1px solid;
+}
+
+footer > .Grid > div > span{
+  font-family: Abel;
+  color: white;
+}
+
+footer > .Grid > div > span > a{
+  font-family: Abel;
+  color: white;
+}
+
+footer > .Grid > div > div{
+  padding: 1rem;
+}
+
+footer > .Grid > div > div > span{
+  font-family: Abel;
+  color: purple;
+  font-size: 1.3rem;
+}
+
+footer > .Grid > div > div > a{
+  color: yellow;
+  padding: 0.75rem;
+}
+
+footer > .Grid > div > div > a:hover{
+  box-shadow: 0px 3px 0px orangered, 0px 3px 0px orange;
+}
+
+footer > .Grid > div > .nav > li > a{
+  color: purple;
+  font-family: Abel;
+}
+
+footer > .Grid > div > .nav > li > a:hover{
+  border-bottom: purple;
+}
+
+footer > .Copywrite-text{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  text-align: center;
+}
+
+footer > .Copywrite-text > div {
+  background-color: rgb(1, 10, 61);
+}
+
+footer > .Copywrite-text > div > a{
+  font-family: Abel;
+  color: orchid;
+}
+
+footer > .Copywrite-text > div > p{
+  font-family: Abel;
+  color: white;
+  text-align: center;
+}
+
+/* End Footer */
+
+/* For mobile s phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+/*media query*/
+@media only screen and (max-width:320px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header img{
+    margin: auto;
+  }
+
+  .navbar{
+    margin: auto;
+  }
+
+  .Showcase-Text > h1{
+    font-size: 2.5rem;
+  }
+
+  .wrapper{
+    height: 25%;
+  }
+
+  .slideshow-container{
+    height: 25%;
+  }
+
+  .mySlides img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .Grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .Grid-container > div{
+    margin-top: 2rem;
+  }
+
+  footer{
+    margin-top: 2rem;
+  }
+
+  footer > .Grid{
+    grid-template-columns: 1fr;
+  }
+
+  footer > .Copywrite-text{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile m phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (max-width:375px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header img{
+    margin: auto;
+  }
+
+  .navbar{
+    margin: auto;
+  }
+
+  .wrapper{
+    height: 25%;
+  }
+
+  .slideshow-container{
+    height: 25%;
+  }
+
+  .mySlides img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .Grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .Grid-container > div{
+    margin-top: 2rem;
+  }
+
+  footer{
+    margin-top: 2rem;
+  }
+
+  footer > .Grid{
+    grid-template-columns: 1fr;
+  }
+
+  footer > .Copywrite-text{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile l phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (max-width:425px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header img{
+    margin: auto;
+  }
+
+  .navbar{
+    margin: auto;
+  }
+
+  .wrapper{
+    height: 25%;
+  }
+
+  .slideshow-container{
+    height: 25%;
+  }
+
+  .mySlides img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .Grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .Grid-container > div{
+    margin-top: 2rem;
+  }
+
+  footer{
+    margin-top: 2rem;
+  }
+
+  footer > .Grid{
+    grid-template-columns: 1fr;
+  }
+
+  footer > .Copywrite-text{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (max-width:768px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header img{
+    margin: auto;
+  }
+
+  .navbar{
+    margin: auto;
+  }
+
+  .wrapper{
+    height: 25%;
+  }
+
+  .slideshow-container{
+    height: 25%;
+  }
+
+  .mySlides img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .Grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .Grid-container > div{
+    margin-top: 2rem;
+  }
+
+  footer{
+    margin-top: 2rem;
+  }
+
+  footer > .Grid{
+    grid-template-columns: 1fr;
+  }
+
+  footer > .Copywrite-text{
+    grid-template-columns: 1fr;
+  }
+}
