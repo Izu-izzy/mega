@@ -452,7 +452,7 @@ footer > .Copywrite-text > div > p{
   }
 
   .Showcase-Text > h1{
-    font-size: 2.25rem;
+    font-size: 2.1rem;
   }
 
   .wrapper{
@@ -507,6 +507,10 @@ footer > .Copywrite-text > div > p{
 
   .navbar{
     margin: auto;
+  }
+
+  .Showcase-Text > h1{
+    font-size: 2.1rem;
   }
 
   .wrapper{
